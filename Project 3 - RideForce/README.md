@@ -13,3 +13,13 @@ Any associates who need a ride can coordinate with drivers who have registered c
 
 ## Environment / Technologies
 Microservices, Angular, Spring, DevOps, Agile, Java, Maven, Amazon Web Services, Git, Jasmine, Karma, Istanbul
+
+## Full Repositories
+
+Front End: https://github.com/revaturelabs/rideshare-client/tree/develop-Oct18-2018   
+Back End: 
+- https://github.com/revaturelabs/rideshare-gateway-service/tree/dev 
+- https://github.com/revaturelabs/rideshare-discovery-service/tree/dev
+- https://github.com/revaturelabs/rideshare-user-service/tree/dev
+- https://github.com/revaturelabs/rideshare-map-service/tree/dev 
+- https://github.com/revaturelabs/rideshare-matching-service/tree/dev
