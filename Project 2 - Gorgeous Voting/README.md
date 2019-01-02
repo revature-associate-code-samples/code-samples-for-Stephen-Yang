@@ -18,3 +18,8 @@ They can also create accounts, which will allow them to save search results when
 ## Environment / Technologies
 
 HTML, CSS, AJAX, SQL, Java, Spring, DevOps, Angular, Hibernate
+
+## Full Repositories
+
+Front End: https://github.com/KienChin/Project2-Angular  
+Back End: https://github.com/KienChin/Pipeline
