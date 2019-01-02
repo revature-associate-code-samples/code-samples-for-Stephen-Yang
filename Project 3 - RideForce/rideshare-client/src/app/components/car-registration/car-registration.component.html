@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="container-fluid">
+    <br>
+    <h2>Vehicle Information:</h2>
+    <br>
+    <br>
+  </div>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="Make">Make</label>
+        <br>
+        <input type="text" class="form-control" id="formMake" placeholder="Make" #carMake>
+        <br>        
+        <label for="Model">Model</label>
+        <br>
+        <input type="text" class="form-control" id="formModel" placeholder="Model" #carModel>
+        <br>        
+        <label for="Year">Year</label>
+        <br>
+        <input type="text" class="form-control" id="formYear" placeholder="Model" #carYear>
+        <br>        
+        <label for="color">Color</label>
+        <br>
+        <input type="text" class="form-control" id="formColor" placeholder="Color" #carColor>
+      </div>
+          <br>
+    <button (click)="submitAutomobile(carMake.value, carModel.value, carYear.value, carColor.value)">Register Car</button>
+    </form>
+    <!-- Development Purposes
+    <br>
+    <button (click)="submitAutomobile(carMake.value, carModel.value, carYear.value, carColor.value)">Register Car</button> -->
+  </div>
+</div>

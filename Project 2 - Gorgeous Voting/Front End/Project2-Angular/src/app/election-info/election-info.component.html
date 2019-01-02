@@ -1,0 +1,58 @@
+<h2><i class="fas fa-person-booth"></i> Elections</h2>
+<div>
+  <input type="text" id="addr" [(ngModel)] = "address" placeholder="address">
+  <button id="theButton" (click)='getItems("elections")' class="btn btn-info">
+    <i class="fas fa-search"></i> Candidates
+  </button>
+  <button (click)='getItems("polling")' class="btn btn-info">
+      <i class="fas fa-search-location"></i> Polling Locations
+  </button>
+
+  <div *ngIf="displayElect">
+
+    <button id="theButton" (click)='reset()' class="btn btn-info"> Clear
+    </button>
+    <br>
+    <div>{{normalizedInput}}</div>
+
+    <div *ngFor="let name of generalElections">
+      
+      <table>
+          <div>
+            <th>Office: {{name.office}}</th>
+          </div>
+          <div *ngFor="let can of name.candidates">
+            <tr>Name: {{can.name}}</tr>
+            <tr>Party: {{can.party}}</tr>
+            <tr>
+              <a href="{{can.candidateUrl}}" class="btn btn-info" role="button">Home Page</a>
+              <app-bookmark url="{{can.candidateUrl}}" name="{{can.name}}"></app-bookmark>
+            </tr>
+          </div>
+
+          
+        </table>
+        <div>
+
+        </div>
+    </div>
+  </div>
+  <div *ngIf="displayPoll">
+      <button id="theButton" (click)='reset()' class="btn btn-info"> Clear
+        </button>
+        <br>
+      <div>{{normalizedInput}}</div>
+    <div *ngFor="let pl of pollingLocations">
+        <div>
+          <ul>
+            <li>Polling Location: {{pl.address.locationName}} </li>
+            <li>City: {{pl.address.city}}</li>
+            <li>Dates: {{pl.startDate}} - {{pl.endDate}}</li>
+            <li>Hours: {{pl.pollingHours}}</li>
+          </ul>  
+        </div>
+    </div>
+  </div>
+  
+  
+</div>

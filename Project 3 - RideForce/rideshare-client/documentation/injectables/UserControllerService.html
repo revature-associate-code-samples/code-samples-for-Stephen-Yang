@@ -1,0 +1,2659 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rideshare-client documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rideshare-client documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>UserControllerService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/api/user-controller.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Enables multiple components to work with User services on the back-end</p>
+
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#currentUser">currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserSubject">currentUserSubject</a>
+                            </li>
+                            <li>
+                                <a href="#isLoggedIn">isLoggedIn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#offices">offices</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#url">url</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#users">users</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createCar">createCar</a>
+                            </li>
+                            <li>
+                                <a href="#createContactInfo">createContactInfo</a>
+                            </li>
+                            <li>
+                                <a href="#createOffice">createOffice</a>
+                            </li>
+                            <li>
+                                <a href="#createUser">createUser</a>
+                            </li>
+                            <li>
+                                <a href="#getAllCars">getAllCars</a>
+                            </li>
+                            <li>
+                                <a href="#getAllContactInfo">getAllContactInfo</a>
+                            </li>
+                            <li>
+                                <a href="#getAllOffices">getAllOffices</a>
+                            </li>
+                            <li>
+                                <a href="#getAllUsers">getAllUsers</a>
+                            </li>
+                            <li>
+                                <a href="#getCarById">getCarById</a>
+                            </li>
+                            <li>
+                                <a href="#getContactInfoById">getContactInfoById</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrentUser">getCurrentUser</a>
+                            </li>
+                            <li>
+                                <a href="#getCurrentUserObservable">getCurrentUserObservable</a>
+                            </li>
+                            <li>
+                                <a href="#getOfficeByLink">getOfficeByLink</a>
+                            </li>
+                            <li>
+                                <a href="#getRegistrationKey">getRegistrationKey</a>
+                            </li>
+                            <li>
+                                <a href="#getUserByEmail">getUserByEmail</a>
+                            </li>
+                            <li>
+                                <a href="#getUserById">getUserById</a>
+                            </li>
+                            <li>
+                                <a href="#invalidateCurrentUser">invalidateCurrentUser</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                            <li>
+                                <a href="#updateCar">updateCar</a>
+                            </li>
+                            <li>
+                                <a href="#updateContactInfo">updateContactInfo</a>
+                            </li>
+                            <li>
+                                <a href="#updateOffice">updateOffice</a>
+                            </li>
+                            <li>
+                                <a href="#updatePassword">updatePassword</a>
+                            </li>
+                            <li>
+                                <a href="#updateStatusAndRole">updateStatusAndRole</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/services/api/user-controller.service.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Sets up the User Service via the Injection of the HttpClient</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><ul>
+<li>Allows service to communicate with the server via HTTP requests</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createCar"></a>
+                        <span class="name">
+                            <b>
+                            createCar
+                            </b>
+                            <a href="#createCar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createCar(newCar: <a href="../classes/Car.html">Car</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="266" class="link-to-prism">src/app/services/api/user-controller.service.ts:266</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Adds a new car to the database</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>newCar</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Car.html" target="_self" >Car</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the car to add to the system</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Car.html" target="_self" >Observable&lt;Car&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createContactInfo"></a>
+                        <span class="name">
+                            <b>
+                            createContactInfo
+                            </b>
+                            <a href="#createContactInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createContactInfo(newContactInfo: <a href="../interfaces/ContactInfo.html">ContactInfo</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="313" class="link-to-prism">src/app/services/api/user-controller.service.ts:313</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Adds a new contact mechanism to the database</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>newContactInfo</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/ContactInfo.html" target="_self" >ContactInfo</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the Contact data to add to the system</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/ContactInfo.html" target="_self" >Observable&lt;ContactInfo&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createOffice"></a>
+                        <span class="name">
+                            <b>
+                            createOffice
+                            </b>
+                            <a href="#createOffice"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createOffice(newOffice: <a href="../interfaces/Office.html">Office</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="217" class="link-to-prism">src/app/services/api/user-controller.service.ts:217</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Creates a new office using a post method.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>newOffice</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Office.html" target="_self" >Office</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the office to add</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Office.html" target="_self" >Observable&lt;Office&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the office entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createUser"></a>
+                        <span class="name">
+                            <b>
+                            createUser
+                            </b>
+                            <a href="#createUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createUser(user: <a href="../interfaces/User.html">User</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, registrationKey: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/services/api/user-controller.service.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Creates a new user with the given data and password.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>user</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>password</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>the new user&#39;s password</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>registrationKey</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Promise&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getAllCars"></a>
+                        <span class="name">
+                            <b>
+                            getAllCars
+                            </b>
+                            <a href="#getAllCars"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getAllCars()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="276" class="link-to-prism">src/app/services/api/user-controller.service.ts:276</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Retrieves all cars stored by the system</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Car.html" target="_self" >Observable&lt;Car[]&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data returned by the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getAllContactInfo"></a>
+                        <span class="name">
+                            <b>
+                            getAllContactInfo
+                            </b>
+                            <a href="#getAllContactInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getAllContactInfo()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="322" class="link-to-prism">src/app/services/api/user-controller.service.ts:322</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Retrieves all contact information stored by the system</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/ContactInfo.html" target="_self" >Observable&lt;ContactInfo[]&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data returned by the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getAllOffices"></a>
+                        <span class="name">
+                            <b>
+                            getAllOffices
+                            </b>
+                            <a href="#getAllOffices"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getAllOffices()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="226" class="link-to-prism">src/app/services/api/user-controller.service.ts:226</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets a list of current offices using the given endpoint.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Office.html" target="_self" >Observable&lt;Office[]&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>Returns all offices entered in the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getAllUsers"></a>
+                        <span class="name">
+                            <b>
+                            getAllUsers
+                            </b>
+                            <a href="#getAllUsers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getAllUsers()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/services/api/user-controller.service.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets an array of users via the given endpoint</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Promise&lt;User[]&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the list of Users on the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCarById"></a>
+                        <span class="name">
+                            <b>
+                            getCarById
+                            </b>
+                            <a href="#getCarById"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getCarById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="286" class="link-to-prism">src/app/services/api/user-controller.service.ts:286</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Retrieves a given car by its id</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the id of the car to get</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Car.html" target="_self" >Observable&lt;Car&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data returned by the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getContactInfoById"></a>
+                        <span class="name">
+                            <b>
+                            getContactInfoById
+                            </b>
+                            <a href="#getContactInfoById"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getContactInfoById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="331" class="link-to-prism">src/app/services/api/user-controller.service.ts:331</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Retrieves a given contact info by its id</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the id of the info to get</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/ContactInfo.html" target="_self" >Observable&lt;ContactInfo&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data returned by the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCurrentUser"></a>
+                        <span class="name">
+                            <b>
+                            getCurrentUser
+                            </b>
+                            <a href="#getCurrentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getCurrentUser()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/services/api/user-controller.service.ts:97</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets the currently logged-in user.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user currently logged in</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCurrentUserObservable"></a>
+                        <span class="name">
+                            <b>
+                            getCurrentUserObservable
+                            </b>
+                            <a href="#getCurrentUserObservable"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getCurrentUserObservable()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/app/services/api/user-controller.service.ts:121</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>First checks that there is not a user populated in currentUser.
+If there isn&#39;t, the currentUser is obtained through the
+getCurrentUser() function.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user currently logged in</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getOfficeByLink"></a>
+                        <span class="name">
+                            <b>
+                            getOfficeByLink
+                            </b>
+                            <a href="#getOfficeByLink"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getOfficeByLink(officeUri: <a href="../interfaces/Office.html">Link<Office></a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="238" class="link-to-prism">src/app/services/api/user-controller.service.ts:238</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets, presumably, an office given something.
+Not sure what. When trying out the endpoint,
+gave access denied.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>officeUri</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Office.html" target="_self" >Link&lt;Office&gt;</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the URL mapping to retrieve the office being sought</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Office.html" target="_self" >Observable&lt;Office&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the office being sought
+-Martin</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getRegistrationKey"></a>
+                        <span class="name">
+                            <b>
+                            getRegistrationKey
+                            </b>
+                            <a href="#getRegistrationKey"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getRegistrationKey()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="132" class="link-to-prism">src/app/services/api/user-controller.service.ts:132</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>generate a key for trainers/managers to register users</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the key to offer new users to use</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getUserByEmail"></a>
+                        <span class="name">
+                            <b>
+                            getUserByEmail
+                            </b>
+                            <a href="#getUserByEmail"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getUserByEmail(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/services/api/user-controller.service.ts:81</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets a single user via the given endpoint and email</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>email</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the email of the user to retrieve</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Promise&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user with the given email</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getUserById"></a>
+                        <span class="name">
+                            <b>
+                            getUserById
+                            </b>
+                            <a href="#getUserById"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getUserById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/services/api/user-controller.service.ts:73</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Gets a single user via the given endpoint and id</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the id of the user to retrieve</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user with the given id</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="invalidateCurrentUser"></a>
+                        <span class="name">
+                            <b>
+                            invalidateCurrentUser
+                            </b>
+                            <a href="#invalidateCurrentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>invalidateCurrentUser()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/app/services/api/user-controller.service.ts:205</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Invalidates the cached data for the current user, forcing the next call to
+getCurrentUser to contact the server for new data.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="update"></a>
+                        <span class="name">
+                            <b>
+                            update
+                            </b>
+                            <a href="#update"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>update()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/services/api/user-controller.service.ts:144</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Updates the given user.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/User.html" target="_self" >Promise&lt;User&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the user being updated</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateCar"></a>
+                        <span class="name">
+                            <b>
+                            updateCar
+                            </b>
+                            <a href="#updateCar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateCar(carUri: <a href="../classes/Car.html">Link<Car></a>, newCar: <a href="../classes/Car.html">Car</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="297" class="link-to-prism">src/app/services/api/user-controller.service.ts:297</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Updates Car information with updated information</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>carUri</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Car.html" target="_self" >Link&lt;Car&gt;</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>The URL mapping to the proper car</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>newCar</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Car.html" target="_self" >Car</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the new information to update with</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Car.html" target="_self" >Observable&lt;Car&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateContactInfo"></a>
+                        <span class="name">
+                            <b>
+                            updateContactInfo
+                            </b>
+                            <a href="#updateContactInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateContactInfo(contactInfoUri: <a href="../interfaces/ContactInfo.html">Link<ContactInfo></a>, newContactInfo: <a href="../interfaces/ContactInfo.html">ContactInfo</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="342" class="link-to-prism">src/app/services/api/user-controller.service.ts:342</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Updates Contact information with updated information</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>contactInfoUri</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/ContactInfo.html" target="_self" >Link&lt;ContactInfo&gt;</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>The URL mapping to the proper Contact info</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>newContactInfo</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/ContactInfo.html" target="_self" >ContactInfo</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the new information to update with</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/ContactInfo.html" target="_self" >Observable&lt;ContactInfo&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the Data entered into the system</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateOffice"></a>
+                        <span class="name">
+                            <b>
+                            updateOffice
+                            </b>
+                            <a href="#updateOffice"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateOffice(officeUri: <a href="../interfaces/Office.html">Link<Office></a>, updatedOffice: <a href="../interfaces/Office.html">Office</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="249" class="link-to-prism">src/app/services/api/user-controller.service.ts:249</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Updates an office with new info</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>officeUri</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Office.html" target="_self" >Link&lt;Office&gt;</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the URL mapping of the office to update</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>updatedOffice</td>
+                                                        <td>
+                                                                    <code><a href="../interfaces/Office.html" target="_self" >Office</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><ul>
+<li>the new stats related to the target office</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Office.html" target="_self" >Observable&lt;Office&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the office the system updated</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updatePassword"></a>
+                        <span class="name">
+                            <b>
+                            updatePassword
+                            </b>
+                            <a href="#updatePassword"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updatePassword(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, oldPassword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, newPassword: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/app/services/api/user-controller.service.ts:179</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Updates the password of the user with the given ID.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>the ID of the user whose password to update</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>oldPassword</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>the user&#39;s current password, for verification</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>newPassword</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>the desired new password</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <ul>
+<li>the value returned by the server</li>
+</ul>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateStatusAndRole"></a>
+                        <span class="name">
+                            <b>
+                            updateStatusAndRole
+                            </b>
+                            <a href="#updateStatusAndRole"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateStatusAndRole(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, active?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, role?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="347" class="link-to-prism">src/app/services/api/user-controller.service.ts:347</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>active</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>role</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Optional</span>
+                            currentUser
+                            </b>
+                            <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>currentUser:     <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/services/api/user-controller.service.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Who is the current user of the system? </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserSubject"></a>
+                        <span class="name">
+                            <b>
+                            currentUserSubject
+                            </b>
+                            <a href="#currentUserSubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>currentUserSubject:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject&lt;User&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/services/api/user-controller.service.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Behaves in a manner similar to that of Observables for Users </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoggedIn"></a>
+                        <span class="name">
+                            <b>
+                            isLoggedIn
+                            </b>
+                            <a href="#isLoggedIn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isLoggedIn:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/services/api/user-controller.service.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Is the user currently logged in? </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="offices"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            offices
+                            </b>
+                            <a href="#offices"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>offices:     <code><a href="../interfaces/Office.html" target="_self" >Office[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/Office.html" target="_self" >Office[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/services/api/user-controller.service.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Holds a list of offices (does not appear to be used) </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="url"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            url
+                            </b>
+                            <a href="#url"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>url:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/services/api/user-controller.service.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>to be used with the url provided by back end </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="users"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            users
+                            </b>
+                            <a href="#users"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>users:     <code><a href="../interfaces/User.html" target="_self" >User[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/User.html" target="_self" >User[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/services/api/user-controller.service.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Holds a list of users (does not appear to be used) </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { User } from &#x27;../../../app/models/user.model&#x27;;
+import { Register } from &#x27;../../../app/models/register.model&#x27;;
+import { Observable, of, Subject } from &#x27;rxjs&#x27;;
+import { environment } from &#x27;../../../environments/environment&#x27;;
+import { tap, catchError } from &#x27;rxjs/operators&#x27;;
+import { Office } from &#x27;../../models/office.model&#x27;;
+import { Car } from &#x27;../../models/car.model&#x27;;
+import { Link } from &#x27;../../models/link.model&#x27;;
+import { ContactInfo } from &#x27;../../models/contact-info.model&#x27;;
+import { Role } from &#x27;../../models/role.model&#x27;;
+
+/**
+ * Enables multiple components to work with User services on the back-end
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class UserControllerService {
+
+  /**
+   * Sets up the User Service via the Injection of the HttpClient
+   * @param {HttpClient} http - Allows service to communicate with the server via HTTP requests
+   */
+  constructor(private http: HttpClient) { }
+
+  /** to be used with the url provided by back end */
+  private url &#x3D; &#x27;&#x27;;
+
+  /** Is the user currently logged in? */
+  isLoggedIn: boolean;
+  /** Who is the current user of the system? */
+  currentUser?: User;
+
+  /** Holds a list of users (does not appear to be used) */
+  private users: User[] &#x3D; [];
+
+  /** Holds a list of offices (does not appear to be used) */
+  private offices: Office[] &#x3D; [];
+
+  /** Behaves in a manner similar to that of Observables for Users */
+  currentUserSubject &#x3D; new Subject&lt;User&gt;();
+
+
+  // CRUD FOR USERS * * * * * * * * * * * * * * * * * * * * *
+
+  /**
+   * Creates a new user with the given data and password.
+   *
+   * @param email the user data object
+   * @param password the new user&#x27;s password
+   * @returns {Observable&lt;User&gt;} - the user entered into the system
+   */
+  // CREATE
+  createUser(user: User, password: string, registrationKey: string): Promise&lt;User&gt; {
+    return this.http.post&lt;User&gt;(environment.apiUrl + &#x27;/users&#x27;,
+      { user, password, registrationKey }
+    ).toPromise();
+  }
+
+  /**
+   * Gets an array of users via the given endpoint
+   * @returns {Observable&lt;User[]&gt;} - the list of Users on the system
+   */
+  getAllUsers(): Promise&lt;User[]&gt; {
+    return this.http.get&lt;User[]&gt;(environment.apiUrl + &#x27;/users&#x27;).toPromise();
+  }
+  /** Gets a single user via the given endpoint and id
+   * @param {number} id - the id of the user to retrieve
+   * @returns {Observable&lt;User&gt;} - the user with the given id
+  */
+  getUserById(id: number): Observable&lt;User&gt; {
+    return this.http.get&lt;User&gt;(environment.apiUrl + &#x60;/users/${id}&#x60;);
+  }
+  /**
+   * Gets a single user via the given endpoint and email
+   * @param {string} email - the email of the user to retrieve
+   * @returns {Observable&lt;User&gt;} - the user with the given email
+   */
+  getUserByEmail(email: string): Promise&lt;User&gt; {
+    return this.http.get&lt;User&gt;(environment.apiUrl + &#x27;/users&#x27;, {
+      params: { email },
+    }).toPromise();
+  }
+
+  /* getUsersByOfficeAndRole(office: number, role: string): Observable&lt;User&gt; {
+    return this.http.get&lt;User&gt;(environment.apiUrl + &#x27;/users&#x27;, {
+      params: { office: String(office), role },
+    });
+  }
+ */
+  /**
+   * Gets the currently logged-in user.
+   * @returns {Observable&lt;User&gt;} - the user currently logged in
+   */
+  getCurrentUser(): Observable&lt;User&gt; {
+    // We cache the current user in a local variable to prevent making too many
+    // calls to the database.
+    console.log(&#x27;Getting current User! api is &quot;&#x27; + environment.apiUrl + &#x27;/login&quot;&#x27;);
+
+    return this.currentUser
+      ? of(this.currentUser)
+      : this.http
+        .get&lt;User&gt;(environment.apiUrl + &#x27;/login&#x27;)
+        .pipe(
+          catchError(function &lt;T&gt;(res?: T) {
+            this.currentUser &#x3D; null;
+            return of(res as T);
+          }),
+          tap(user &#x3D;&gt; {
+            this.currentUser &#x3D; user;
+            this.currentUserSubject.next(user);
+          }));
+  }
+  /**First checks that there is not a user populated in currentUser.
+   * If there isn&#x27;t, the currentUser is obtained through the
+   * getCurrentUser() function.
+   * @returns {Observable&lt;User&gt;} - the user currently logged in
+   */
+  getCurrentUserObservable(): Observable&lt;User&gt; {
+    if (!this.currentUser) {
+      this.getCurrentUser().subscribe();
+    }
+    return this.currentUserSubject;
+  }
+
+  /**
+   * generate a key for trainers/managers to register users
+   * @returns {Observable&lt;string&gt;} - the key to offer new users to use
+   */
+  getRegistrationKey() {
+    return this.http.get&lt;string&gt;(environment.apiUrl + &#x60;/registration-key&#x60;);
+  }
+
+  // UPDATE
+  /**
+    * Updates the given user.
+    *
+    * @param user the user to update. The ID property is required, to identify
+    * the user to update.
+    * @returns {Observable&lt;User&gt;} - the user being updated
+    */
+  update(): Promise&lt;User&gt; {
+    const body &#x3D; {
+      firstName: sessionStorage.getItem(&#x27;firstName&#x27;),
+      lastName: sessionStorage.getItem(&#x27;lastName&#x27;),
+      email: sessionStorage.getItem(&#x27;userEmail&#x27;),
+      photoUrl: null,
+      password: sessionStorage.getItem(&#x27;userPassword&#x27;),
+      role: sessionStorage.getItem(&#x27;role&#x27;),
+      address: sessionStorage.getItem(&#x27;address&#x27;),
+      batchEnd: new Date(sessionStorage.getItem(&#x27;batchEnd&#x27;)),
+      startTime: null,
+      active: sessionStorage.getItem(&#x27;active&#x27;)
+    };
+
+    return this.http
+      .put&lt;User&gt;(environment.apiUrl + &#x60;/users/${sessionStorage.getItem(&#x27;id&#x27;)}&#x60;, body)
+      .pipe(
+        tap(updated &#x3D;&gt; {
+          // We need to make sure that we refresh the current user if that&#x27;s the
+          // one that was updated.
+          if (this.currentUser &amp;&amp; this.currentUser.id &#x3D;&#x3D;&#x3D; updated.id) {
+            this.currentUser &#x3D; updated;
+          }
+        })
+      ).toPromise();
+  }
+
+  /**
+   * Updates the password of the user with the given ID.
+   *
+   * @param id the ID of the user whose password to update
+   * @param oldPassword the user&#x27;s current password, for verification
+   * @param newPassword the desired new password
+   * @returns {Observable&lt;void&gt;} - the value returned by the server
+   */
+  updatePassword(
+    id: number,
+    oldPassword: string,
+    newPassword: string
+  ): Observable&lt;void&gt; {
+    return this.http.post&lt;void&gt;(environment.apiUrl + &#x60;/users/${id}/password&#x60;, {
+      oldPassword,
+      newPassword,
+    });
+  }
+
+  // DELETE
+
+  // TODO be able to remove
+  // removeUser(user: User): Observable&lt;User&gt; {
+  //   return this.http
+  //     .delete&lt;User&gt;(environment.apiUrl + &#x60;/users/${user.id}&#x60;);
+  // }
+  // removeBatch(users: User[]): Observable&lt;User&gt; {
+  //   return this.http.delete&lt;User&gt;(environment.apiUrl + &#x60;/users/&#x60;)
+  // }
+
+  /**
+   * Invalidates the cached data for the current user, forcing the next call to
+   * getCurrentUser to contact the server for new data.
+   */
+  invalidateCurrentUser(): void {
+    this.currentUser &#x3D; null;
+    this.currentUserSubject.next(null);
+  }
+
+
+  // OFFICE CRUD * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  /**
+   * Creates a new office using a post method.
+   * @param {Office} newOffice - the office to add
+   * @returns {Observable&lt;Office&gt;} - the office entered into the system
+  */
+  createOffice(newOffice: Office): Observable&lt;Office&gt; {
+    return this.http.post&lt;Office&gt;(environment.apiUrl + &#x27;/offices&#x27;, newOffice);
+  }
+
+  // READ
+  /**
+   * Gets a list of current offices using the given endpoint.
+   * @returns {Observable&lt;Office[]&gt;} - Returns all offices entered in the system
+   */
+  getAllOffices(): Observable&lt;Office[]&gt; {
+    return this.http.get&lt;Office[]&gt;(environment.apiUrl + &#x27;/offices&#x27;);
+  }
+
+  // may have to replace string with Link&lt;Office&gt;
+  /**Gets, presumably, an office given something.
+   * Not sure what. When trying out the endpoint,
+   * gave access denied.
+   * @param {Link&lt;Office&gt;} officeUri - the URL mapping to retrieve the office being sought
+   * @returns {Observable&lt;Office&gt;} - the office being sought
+   * -Martin
+  */
+  getOfficeByLink(officeUri: Link&lt;Office&gt;): Observable&lt;Office&gt; {
+    return this.http.get&lt;Office&gt;(environment.apiUrl + officeUri);
+  }
+
+  // UPDATE
+  /**
+   * Updates an office with new info
+   * @param officeUri - the URL mapping of the office to update
+   * @param updatedOffice - the new stats related to the target office
+   * @returns {Observable&lt;Office&gt;} - the office the system updated
+   */
+  updateOffice(officeUri: Link&lt;Office&gt;, updatedOffice: Office): Observable&lt;Office&gt; {
+    return this.http.put&lt;Office&gt;(environment.apiUrl + officeUri, updatedOffice);
+    // maybe implement pipe to verify if the user has authorization to add a location (i.e. a trainer/manager)
+  }
+
+  // DELETE
+  // TODO
+
+
+  // CARS CRUD * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  // CREATE
+  /**
+   * Adds a new car to the database
+   * @param {Car} newCar - the car to add to the system
+   * @returns {Observable&lt;Car&gt;} - the Data entered into the system
+   */
+  createCar(newCar: Car): Observable&lt;Car&gt; {
+    console.log(&#x27;Creating new Car! &#x27; + environment.apiUrl);
+    return this.http.post&lt;Car&gt;(environment.apiUrl + &#x27;/cars&#x27;, newCar);
+  }
+
+  // READ
+  /**
+   * Retrieves all cars stored by the system
+   * @returns {Observable&lt;Car[]&gt;} - the Data returned by the system
+   */
+  getAllCars(): Observable&lt;Car[]&gt; {
+    console.log(&#x27;Getting all cars!&#x27;);
+    return this.http.get&lt;Car[]&gt;(environment.apiUrl + &#x27;/cars&#x27;);
+  }
+
+  /**
+   * Retrieves a given car by its id
+   * @param {number} id - the id of the car to get
+   * @returns {Observable&lt;Car&gt;} - the Data returned by the system
+   */
+  getCarById(id: number): Observable&lt;Car&gt; {
+    return this.http.get&lt;Car&gt;(environment.apiUrl + &#x60;/cars/${id}&#x60;);
+  }
+
+  // UPDATE
+  /**
+   * Updates Car information with updated information
+   * @param {Link&lt;Car&gt;} carUri - The URL mapping to the proper car
+   * @param {Car} newCar - the new information to update with
+   * @returns {Observable&lt;Car&gt;} - the Data entered into the system
+   */
+  updateCar(carUri: Link&lt;Car&gt;, newCar: Car): Observable&lt;Car&gt; {
+    return this.http
+      .put&lt;Car&gt;(environment.apiUrl + carUri, newCar);
+  }
+
+  // TODO
+  // DELETE CAR
+
+  // CONTACT-INFO CRUD * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  // CREATE
+  /**
+   * Adds a new contact mechanism to the database
+   * @param {ContactInfo} newContactInfo - the Contact data to add to the system
+   * @returns {Observable&lt;ContactInfo&gt;} - the Data entered into the system
+   */
+  createContactInfo(newContactInfo: ContactInfo): Observable&lt;ContactInfo&gt; {
+    return this.http.post&lt;ContactInfo&gt;(environment.apiUrl + &#x27;/contact-info&#x27;, newContactInfo);
+  }
+
+  // READ
+  /**
+   * Retrieves all contact information stored by the system
+   * @returns {Observable&lt;ContactInfo[]&gt;} - the Data returned by the system
+   */
+  getAllContactInfo(): Observable&lt;ContactInfo[]&gt; {
+    return this.http.get&lt;ContactInfo[]&gt;(environment.apiUrl + &#x27;/contact-info&#x27;);
+  }
+
+  /**
+   * Retrieves a given contact info by its id
+   * @param {number} id - the id of the info to get
+   * @returns {Observable&lt;ContactInfo&gt;} - the Data returned by the system
+   */
+  getContactInfoById(id: number): Observable&lt;ContactInfo&gt; {
+    return this.http.get&lt;ContactInfo&gt;(environment.apiUrl + &#x60;/contact-info/${id}&#x60;);
+  }
+
+  // UPDATE
+  /**
+   * Updates Contact information with updated information
+   * @param {Link&lt;ContactInfo&gt;} contactInfoUri - The URL mapping to the proper Contact info
+   * @param {ContactInfo} newContactInfo - the new information to update with
+   * @returns {Observable&lt;ContactInfo&gt;} - the Data entered into the system
+   */
+  updateContactInfo(contactInfoUri: Link&lt;ContactInfo&gt;, newContactInfo: ContactInfo): Observable&lt;ContactInfo&gt; {
+    return this.http
+      .put&lt;ContactInfo&gt;(environment.apiUrl + contactInfoUri, newContactInfo);
+  }
+
+  updateStatusAndRole(id: number, active?: string, role?: string) {
+    const body &#x3D; {
+      firstName: null,
+      lastName: null,
+      email: null,
+      photoUrl: null,
+      password: null,
+      role: role,
+      address: null,
+      batchEnd: null,
+      startTime: null,
+      active: active
+    }
+
+    return this.http
+      .put&lt;User&gt;(environment.apiUrl + &#x60;/users/${id}&#x60;, body)
+      .pipe(
+        tap(updated &#x3D;&gt; {
+          // We need to make sure that we refresh the current user if that&#x27;s the
+          // one that was updated.
+          if (this.currentUser &amp;&amp; this.currentUser.id &#x3D;&#x3D;&#x3D; updated.id) {
+            this.currentUser &#x3D; updated;
+          }
+        })
+      ).toPromise();
+
+    // TODO
+    // DELETE CONTACT-INFO
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserControllerService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

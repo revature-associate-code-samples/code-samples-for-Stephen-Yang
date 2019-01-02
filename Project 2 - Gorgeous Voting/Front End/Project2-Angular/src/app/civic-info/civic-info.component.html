@@ -1,0 +1,37 @@
+<div class="m-4">
+  <!-- <input type="text" id="addressBox" placeholder="Address"/>
+  <p>{{name}}</p> -->
+  <h2><i class="fas fa-user-tie"></i> Representatives</h2>
+  <input type="text" id="addr" [(ngModel)] = "address" placeholder="address">
+  <button id="theButton" (click)='getAddress()' class="btn btn-info">
+    <i class="fas fa-search"></i> 
+  </button>
+  
+
+  <div *ngIf="displayData">
+      <button id="theButton" (click)='reset()' class="btn btn-info">clear 
+        </button>
+    <div *ngFor="let name of outputArray">
+      <img [src]="name.photo" style="width:250px;height:300px;"/>
+      <table>
+        <div>
+          <table>
+            <tr>Office: {{name.name}}</tr>
+            <tr>Official: {{name.person}}</tr>
+            <tr>Party: {{name.party}}</tr>
+            <!-- <td>{{name.photo}}</td> -->
+            <!-- <td>{{name.url}}</td> -->
+            <tr>
+              <a href="{{name.url}}" class="btn btn-info" role="button">Home Page</a>
+              <app-bookmark url="{{name.url}}" name="{{name.person}}"></app-bookmark>
+            </tr>
+            
+          </table>
+        </div>
+          
+      </table>
+    </div>
+  </div>
+
+
+</div>
