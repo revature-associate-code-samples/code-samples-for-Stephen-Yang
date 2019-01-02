@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="mhomeAJAX.js"></script>
+</head>
+<body>
+  <div class="container jumbotron bg-info m-3 p-3">
+		<div class="row"></div>
+		<div class="row">
+			<div class="col"></div>
+			<div id="mainDiv" class="jumbotron col-8 bg-light m-3 p-3 text-center">
+			    <h1>Manager Home</h1>
+			    <p>
+						View
+						<select id="viewMenu">
+								<option value="emps" onclick="showEmpTable()">Employees</option>
+								<option value="reqs" onclick="showStatMenu()">Requests</option>
+						</select>
+					
+			    
+			    <span id="moreSpan">
+					</span>
+					</p>
+			    <div id="tableDiv" class="m-3 p-3">
+					</div>
+					<form action="logout" method="GET">
+						<input type="submit" id="logoutBtn" value="Log Out" class="btn btn-danger">
+					</form> 
+			</div>
+			<div class="col"></div>
+		</div>
+		<div class="row"></div>
+  </div>
+</body>
+</html>

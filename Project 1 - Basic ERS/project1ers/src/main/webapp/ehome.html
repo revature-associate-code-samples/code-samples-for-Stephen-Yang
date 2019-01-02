@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script type="text/javascript">
+  	window.onload = () => {
+  		
+  	}
+  	
+    function displayInfo() {
+    	var xhr = new XMLHttpRequest();
+   	  xhr.onreadystatechange = function() {
+   	    if (this.readyState == 4 && this.status >= 200 && this.status < 300) {
+   	      var emp = JSON.parse(this.responseText);
+   	      console.log(emp);
+   	      document.getElementById('viewDiv').innerHTML =
+   	        `<h3>Your Personal Information</h3>
+   	          <p>Username: ${emp.username}</p>
+   	          <p>Email: ${emp.email}</p>`;
+   	    }
+   	  };
+   	  xhr.open("POST", "emp");
+   	  xhr.send();
+    }
+    function displayReqs() {
+      console.log("requests button pressed");
+      document.getElementById('viewDiv').innerHTML = 
+      `<h3>Your Requests</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[ID number]</td>
+            <td>[dollar amount]</td>
+            <td>[pending/resolved/denied]</td>
+          </tr>
+        </tbody>
+      </table>`;
+    }
+  </script>
+  <style type="text/css">
+    body {
+      background-color: seagreen;
+    }
+
+    button {
+      background-color: palegreen;
+      border-radius: 10px;
+      margin: 3%;
+      padding: 7%;
+    }
+
+    button:hover {
+      background-color: mediumseagreen;
+      color: springgreen;
+    }
+    #viewDiv {
+    	background-color: palegreen;
+    	margin: 1%;
+    	padding: 10%;
+    	text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 id="welcome" name="uname">Hello, <span id="helloname">employee</span>.</h2>
+  <!--
+    -An Employee can view the Employee Homepage
+    -An Employee can logout
+    -An Employee can submit a reimbursement request
+    -An Employee can upload an image of his/her receipt as part of the reimbursement request (optional - hard / do last)
+    -An Employee can view their pending reimbursement requests
+    -An Employee can view their resolved reimbursement requests
+    -An Employee can view their information
+    -An Employee can update their information
+  -->
+  <p>What would you like to do?</p>
+  <button id="infoBtn" onclick='displayInfo()'>View Your Personal Information</button>
+  <button id="reqsBtn" onclick='displayReqs()'>View Your Requests</button>
+  <div id="viewDiv"> 
+  </div>
+</body>
+
+</html>
