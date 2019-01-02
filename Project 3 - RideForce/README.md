@@ -12,5 +12,4 @@ Any associates who need a ride can coordinate with drivers who have registered c
 * Facilitated collaboration and source code management via Git and GitHub.
 
 ## Environment / Technologies
-
-Angular, Jasmine, Karma, Istanbul, Agile, Git
+Microservices, Angular, Spring, DevOps, Agile, Java, Maven, Amazon Web Services, Git, Jasmine, Karma, Istanbul
