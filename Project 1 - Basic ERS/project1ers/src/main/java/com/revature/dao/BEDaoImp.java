@@ -17,8 +17,6 @@ public class BEDaoImp implements BasicEmpDao {
 	
 	final static Logger bedLogger = Logger.getLogger(BasicReqDao.class);
 	private static BEDaoImp bed;
-	// use later: Connection conn = Connector.getConnection();
-	
 	
 	public BEDaoImp() {
 		super();
@@ -33,9 +31,9 @@ public class BEDaoImp implements BasicEmpDao {
 
 	public BasicEmployee selectEmp(String username) {
 		bedLogger.info("retrieving employee");
-		try (Connection conn = Connector.getConnection()) { // just have one conn above?
+		try (Connection conn = Connector.getConnection()) { 
 			PreparedStatement seSP = conn.prepareStatement("SELECT * FROM basic_employees WHERE user_name = ?");
-			seSP.setString(1, username); // will this work? 
+			seSP.setString(1, username); 
 			ResultSet empRS = seSP.executeQuery();
 			while (empRS.next()) {
 				bedLogger.info("query in BEDaoImp.selectEmp succeeded");

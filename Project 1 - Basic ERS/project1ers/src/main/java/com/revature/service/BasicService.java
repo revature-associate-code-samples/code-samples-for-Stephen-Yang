@@ -29,8 +29,6 @@ public class BasicService {
 		return serv;
 	}
 	
-	
-	
 	//login
 	public boolean login(String username, String password) {	
 		try {
@@ -49,12 +47,6 @@ public class BasicService {
 			return false;
 		}
 	}
-	
-	
-	
-	//view the Employee Homepage
-	
-	//logout
 	
 	public static String getCurrentUser() {
 		return uName;
@@ -79,13 +71,6 @@ public class BasicService {
 		return BRDaoImp.getBRDao().addReq(newReq);
 	}
 	
-	//upload an image of his/her receipt as part of the reimbursement request (optional - hard / do last)
-	
-	//view their information
-		// just return emp obj?
-		// as a list?
-		// as a string in json format?
-	
 	//update their information
 	public boolean changeInfo(String pw, String info, String newVal) { // authenticate here or on servlet?
 		if (pw.matches(BEDaoImp.getBEDao().selectEmp(uName).getPassword())) {
@@ -94,20 +79,6 @@ public class BasicService {
 		}
 		return false;
 	}
-	
-	//sends an email when one of their reimbursement requests is resolved (optional)
-
-	/**
-	 * -A Manager can login
-	 * -A Manager can view the Manager Homepage
-	 * -A Manager can logout
-	 * -A Manager can approve/deny pending reimbursement requests - use update
-	 * -A Manager can view all pending requests from all employees
-	 * -A Manager can view images of the receipts from reimbursement requests (hard /do last / optional)
-	 * -A Manager can view all resolved requests from all employees and see which manager resolved it
-	 * -A Manager can view all Employees - selectAllEmps
-	 * -A Manager can view reimbursement requests from a single Employee
-	 */
 	
 	public boolean resolveReq(String choice, int reqID) {
 		boolean resolved = false;

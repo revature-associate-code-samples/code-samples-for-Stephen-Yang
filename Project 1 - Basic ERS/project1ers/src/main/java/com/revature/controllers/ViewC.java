@@ -69,9 +69,9 @@ public class ViewC extends HttpServlet {
 			vcLogger.info(sentStr+"'s requests: "+rList);	
 		}
 		
-		ObjectMapper mapper = new ObjectMapper(); // create an object mapper (Jackson)
+		ObjectMapper mapper = new ObjectMapper();
 		response.setHeader("Content-Type", "application/json");
-		mapper.writeValue(response.getOutputStream(), rList); // marshal bean and output
+		mapper.writeValue(response.getOutputStream(), rList);
 	}
 
 }

@@ -21,7 +21,6 @@ public class LogoutC extends HttpServlet {
      */
     public LogoutC() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -32,13 +31,13 @@ public class LogoutC extends HttpServlet {
 		outLogger.info(request.getRequestURI());
 		HttpSession currentSess = request.getSession(false);
 		try {
-			outLogger.info(currentSess.getAttribute("user"));
-		} catch (NullPointerException npe) {
-			outLogger.warn("session is already null but should not be");
+			outLogger.info("session belongs to "+currentSess.getAttribute("user"));
+			currentSess.invalidate();
+			outLogger.info("logout successful");
+			response.sendRedirect("/project1ers/");
+		} catch (IllegalStateException ise) {
+			outLogger.warn("session is already invalid but should not be");
 		}
-		if (currentSess != null) { currentSess.invalidate(); }
-		response.sendRedirect("/project1ers/");
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 	}
 

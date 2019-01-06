@@ -32,7 +32,6 @@ public class EmpController extends HttpServlet {
      */
     public EmpController() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -41,6 +40,7 @@ public class EmpController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ecLogger.info("pressed Manager Home button");
 		request.getRequestDispatcher("mhome.html").forward(request, response);
+		ecLogger.info("session: "+request.getSession().getAttribute("user"));
 	}
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -53,8 +53,7 @@ public class EmpController extends HttpServlet {
 		String urlPattern = request.getRequestURI();
 		ecLogger.info(urlPattern);
 		String[] inputStrs = request.getReader().readLine().split(" ");
-		//ecLogger.info("ec doPost read this request body: "+inputStrs.toString());
-		// update fields to values sent by client - ajax
+		
 		if (BasicService.getService().changeInfo(inputStrs[0], inputStrs[1], inputStrs[2])) {
 			response.getWriter().write(inputStrs[2]); // using select is stronger guarantee
 		} else {

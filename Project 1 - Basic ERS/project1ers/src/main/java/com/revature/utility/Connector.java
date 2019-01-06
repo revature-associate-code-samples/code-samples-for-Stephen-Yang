@@ -15,13 +15,12 @@ public class Connector {
             Class.forName("oracle.jdbc.OracleDriver");
         } catch (ClassNotFoundException e) {
         	cLogger.error(e.getMessage());
-            e.printStackTrace();
         }
 		String url = "jdbc:oracle:thin:@sy-revature.cugxe1ca0ol9.us-east-2.rds.amazonaws.com:1521:ORCL"; 
 		String user = "sy18"; 
 		String pass = "Databaser14";
 		
-		return DriverManager.getConnection(url, user, pass); // establish connection
+		return DriverManager.getConnection(url, user, pass);
 	}
 	
 }

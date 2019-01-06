@@ -18,7 +18,7 @@ document.getElementById('loginBtn').onclick = () => {
     if (xhr.readyState == 3) {
       document.getElementById('message').innerHTML = "Processing...";
     }
-    if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300) { // might need condition for responseText, which might need ContentType header 
+    if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300) { 
       if (xhr.responseText.match("Login failed.")) {
         document.getElementById('message').innerHTML = xhr.responseText;
       } else {
@@ -51,7 +51,7 @@ document.getElementById('loginBtn').onclick = () => {
           
           </p>
           <p>
-          <form action action="logout" method="GET">
+          <form action="logout" method="GET">
             <input type="submit" id="logoutBtn" value="Log Out" class="btn btn-danger">
           </form>
           </p>
@@ -103,7 +103,7 @@ function viewReqs(stat) {
       </table>
       `;
     // build table with for loop
-    let rList = JSON.parse(xhr.response); // an array - parse here or in loop? or not at all?
+    let rList = JSON.parse(xhr.response); 
     rList.forEach(req => {
       let row = document.createElement('tr');
       document.getElementById('viewTB').append(row);

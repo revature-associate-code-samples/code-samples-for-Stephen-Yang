@@ -9,7 +9,6 @@ public class BasicEmployee {
 	
 	public BasicEmployee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public BasicEmployee(String username, String password, String email, int level) {
